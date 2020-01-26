@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = mongoose.Schema({
-  forename: {
+  firstname: {
     type: String,
     required: true
   },
-  surname: {
+  lastname: {
     type: String,
     required: true
   },

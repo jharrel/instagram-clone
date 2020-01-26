@@ -32,8 +32,8 @@ module.exports = {
   register: (req, res) => {
     
     let newUser = new model({
-      forename: req.body.forename,
-      surname: req.body.surname,
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
       email: req.body.email,
       password: req.body.password
     });
@@ -64,7 +64,7 @@ module.exports = {
             res.send({
               success: true, 
               details: {
-                display_name: user.forename + ' ' + user.surname,
+                display_name: user.firstname + ' ' + user.lastname,
                 posts: posts
               }
             })

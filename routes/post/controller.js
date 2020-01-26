@@ -15,7 +15,7 @@ module.exports = {
         
         let newpost = new model({
           user_id: user_id,
-          display_name: result.forename + ' ' + result.surname,
+          display_name: result.firstname + ' ' + result.lastname,
           image: req.body.image,
           desc: req.body.desc,
           timestamp: Date.now()
